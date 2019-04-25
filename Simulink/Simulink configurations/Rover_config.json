@@ -1,0 +1,329 @@
+{
+   "SimulinkModel" : {
+      "FromVortex" : [
+         {
+            "Dataname" : "Torque1",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Torque2",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Torque3",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Torque4",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Torque5",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Torque6",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed1",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed2",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed3",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed4",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed5",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed6",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Lineal Speed",
+            "Datatype" : "double",
+            "Dimension" : 3
+         },
+         {
+            "Dataname" : "World Transform",
+            "Datatype" : "double",
+            "Dimension" : 16
+         },
+         {
+            "Dataname" : "Wheel Transform",
+            "Datatype" : "double",
+            "Dimension" : 16
+         },
+         {
+            "Dataname" : "Motor Transform",
+            "Datatype" : "double",
+            "Dimension" : 16
+         },
+         {
+            "Dataname" : "PosJ1",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "PosJ2",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "PosJ3",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "PosJ4",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "PosJ5",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer1",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer2",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer3",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer4",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer5",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer6",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Torque 1",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Torque 2",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Torque 3",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Torque 4",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Torque 5",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Torque 6",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Speed 1",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Speed 2",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Speed 3",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Speed 4",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Speed 5",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WW Speed 6",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "RS position",
+            "Datatype" : "double",
+            "Dimension" : 3
+         },
+         {
+            "Dataname" : "LS position",
+            "Datatype" : "double",
+            "Dimension" : 3
+         }
+      ],
+      "ToVortex" : [
+         {
+            "Dataname" : "Steer1Angle",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer2Angle",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer3Angle",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer4Angle",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer5Angle",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Steer6Angle",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed1",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed2",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed3",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed4",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed5",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Speed6",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WJ1",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WJ2",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WJ3",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WJ4",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WJ5",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "WJ6",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Joint speed 1",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Joint speed 2",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Joint speed 3",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Joint speed 4",
+            "Datatype" : "double",
+            "Dimension" : 1
+         },
+         {
+            "Dataname" : "Joint speed 5",
+            "Datatype" : "double",
+            "Dimension" : 1
+         }
+      ],
+      "VortexModuleType" : "My Model"
+   }
+}

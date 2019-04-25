@@ -1,0 +1,103 @@
+{
+   "ApplicationConfig" : {
+      "Extensions" : [
+         {
+            "Category" : "Application",
+            "Name" : "Dynamics Visualizer",
+            "Type" : "Dynamics Visualizer",
+            "UUID" : {
+               "Id" : "47e1f87d-6f03-57c7-95b4-e9373299555b"
+            },
+            "VXP" : "DynamicsVisualizer",
+            "Version" : 61131210
+         }
+      ],
+      "Modules" : [
+         {
+            "Category" : "Dynamics",
+            "Name" : "Dynamics Engine",
+            "Type" : "Engine",
+            "UUID" : {
+               "Id" : "3a6c7474-6a01-5f06-ac36-c3a0d7cad4bf"
+            },
+            "VXP" : "VxDynamicsPlugin",
+            "Version" : 620150730
+         },
+         {
+            "Category" : "Graphics",
+            "Name" : "Graphics Module",
+            "Type" : "VxCycloneOSG",
+            "UUID" : {
+               "Id" : "bf5b2902-675c-5b1d-b7f7-88d16c78db5a"
+            },
+            "VXP" : "VxCycloneOSG",
+            "Version" : 620160422
+         },
+         {
+            "Category" : "Input Devices",
+            "Name" : "Input Device - SDL Joystick",
+            "Type" : "SDL Joystick",
+            "UUID" : {
+               "Id" : "5a6272d9-7802-54ec-bb83-51669d3f1063"
+            },
+            "VXP" : "VxSimDevicesJoystick"
+         },
+         {
+            "Category" : "Earthwork Systems",
+            "Name" : "Earthwork Systems Module",
+            "Type" : "Earthwork Systems Module",
+            "UUID" : {
+               "Id" : "0d19e6ba-132d-4f28-b48f-bd37c66c9475"
+            },
+            "VXP" : "EarthworkSystemsDynamic"
+         },
+         {
+            "Category" : "Audio",
+            "Name" : "Audio OpenAL",
+            "Type" : "OpenAL",
+            "UUID" : {
+               "Id" : "736956dd-25ee-4fc6-8a8b-d58c2fc4bd1e"
+            },
+            "VXP" : "VxSoundModuleOpenAL"
+         },
+         {
+            "Category" : "Application",
+            "Name" : "Metrics Manager",
+            "Type" : "Metrics Manager",
+            "UUID" : {
+               "Id" : "72b7a738-e758-455c-8846-1781431b44f9"
+            },
+            "VXP" : "VxSimMetrics"
+         },
+         {
+            "Category" : "Input Devices",
+            "Name" : "Input Device - Space Navigator",
+            "Type" : "Space Navigator",
+            "UUID" : {
+               "Id" : "2cad0cc0-0371-5426-abd7-ba3ad8938e98"
+            },
+            "VXP" : "VxSimDevicesSpaceNavigator"
+         },
+         {
+            "Category" : "Human",
+            "Name" : "Human Module",
+            "Type" : "Humans Module",
+            "UUID" : {
+               "Id" : "ee8436e8-e952-4e83-8e52-a722f07e3fa4"
+            },
+            "VXP" : "VxHumanDynamics"
+         },
+         {
+            "Category" : "Simulink",
+            "Name" : "Simulink Module",
+            "Type" : "Simulink Module",
+            "UUID" : {
+               "Id" : "a5d0539f-884e-51a8-b64e-61431a8a18a9"
+            },
+            "VXP" : "VxSimulink"
+         }
+      ],
+      "Name" : "Setup"
+   },
+   "Version" : [ 2017, 0 ]
+}
