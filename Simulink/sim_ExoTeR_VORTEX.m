@@ -17,7 +17,7 @@
     mode = 0;
     
 % If simulating Wheel-walking, choose acceleration
-    acc = 2;
+    acc = 5;
 
 % Starts the simulation
     sim('Simulink_Vortex.slx')
@@ -68,11 +68,18 @@
         
     % Maximum distance obtention
         theta = RzwheelA(end)-RzwheelA(1);
-        A = theta*1*rw*0.824; %0.5735 para 1, 0.651 para 1.4, 0.72335 para 2, 0.794 para 3, 0.824 para 4
+        A = theta*1*rw*0.824; 
         dmax = A+dmin;
         
     % Final slip ratio estimated
-        WWslip = (dmax-d)/(dmax-dmin)
+        WWslip = (dmax-d)/(dmax-dmin);
+        if WWslip < 0
+            WWslip = 0
+        elseif WWslip < 1
+            WWslip
+        else
+            WWslip = 1
+        end
 
     % Turn radius during the accelerated steps
         idealR_acc = idealR(first:last);
@@ -83,7 +90,7 @@
     % Current consumption during the whole simulation
         WWcurrentConsumption = WWcurrent(end)
         
-    % Final speed of the rover
+    % Final speed of the rover    
         WWfinalSpeed = vB(end)
 
     else

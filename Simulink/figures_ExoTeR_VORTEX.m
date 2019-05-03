@@ -351,15 +351,19 @@ text(0.9-0.03,-1,0,'\rho = 0.2423','FontSize',16)
 slip = [0 7.34 19.07 47.64 64.5 95]/100;
 
 
-slipWW1 = [0.3082 0.3939 0.4718 0.5812 0.6890 1];
-slipWW1_4 = [0.2030 0.3171 0.3900 0.4934 0.6955 1];
-slipWW2 = [0.1091 0.2324 0.2883 0.4308 0.7618 0.9530];
-slipWW3 = [0.0320 0.1839 0.2579 0.5586 0.8335 0.9197];
-slipWW4 = [0 0.1784 0.2598 0.6530 0.8711 0.9259];
-slipWW5 = [0 0.1691 0.2719 0.7175 0.8947 0.9381];
+slipWW1 =    [0.2644 0.3440 0.4058 0.5058 0.5908 0.8907];
+slipWW1_25 = [0.1975 0.3068 0.3669 0.4602 0.6213 0.9283];
+slipWW1_5 =  [0.1478 0.2582 0.3229 0.4307 0.6472 0.9359];
+slipWW1_75 = [0.1137 0.2094 0.2706 0.3890 0.6775 0.9349];
+slipWW2 =    [0.0874 0.1689 0.2316 0.4003 0.7156 0.9268];
+slipWW3 =    [0.01   0.1133 0.2149 0.5607 0.8129 0.9172];
+slipWW4 =    [0      0.0876 0.2197 0.6612 0.8600 0.9235];
+slipWW5 =    [0      0.0778 0.2295 0.7210 0.8895 0.9403];
 
 eww1 = slipWW1-slip;
-eww1_4 = slipWW1_4-slip;
+eww1_25 = slipWW1_25-slip;
+eww1_5 = slipWW1_5-slip;
+eww1_75 = slipWW1_75-slip;
 eww2 = slipWW2-slip;
 eww3 = slipWW3-slip;
 eww4 = slipWW4-slip;
@@ -390,53 +394,59 @@ eww5 = slipWW5-slip;
 
 figure
 hold on;
-plot(0:0.19:0.95,100*eww1,'Color',[0 0 128]/255,'LineWidth',2)
-plot(0:0.19:0.95,100*eww1_4,'Color',[0 0 180]/255,'LineWidth',2)
+plot(0:0.19:0.95,100*eww1,'Color',[0 0 75]/255,'LineWidth',2)
+plot(0:0.19:0.95,100*eww1_25,'Color',[0 0 100]/255,'LineWidth',2)
+plot(0:0.19:0.95,100*eww1_5,'Color',[0 0 150]/255,'LineWidth',2)
+plot(0:0.19:0.95,100*eww1_75,'Color',[0 0 200]/255,'LineWidth',2)
 plot(0:0.19:0.95,100*eww2,'Color',[0 0 255]/255,'LineWidth',2)
 plot(0:0.19:0.95,100*eww3,'Color',[065 105 255]/255,'LineWidth',2)
 plot(0:0.19:0.95,100*eww4,'Color',[030 144 255]/255,'LineWidth',2)
 plot(0:0.19:0.95,100*eww5,'Color',[135 206 235]/255,'LineWidth',2)
-legend('Speed x1','Speed x1.4','Speed x2','Speed x3','Speed x4','Speed x5')
+legend('Vel x1','Vel x1.25','Vel x1.5','Vel x1.75','Vel x2','Vel x3','Vel x4','Vel x5')
 xlabel('')
 ylabel('Error (%)')
 set(gca,'FontSize',20);
 set(gca,'xtick',0:0.19:0.95,'xticklabel',{'Terrain 1','Terrain 2','Terrain 3','Terrain 4','Terrain 5','Terrain 6'})
-text(0-0.03,-7-0.7,0,'\sigma = 0','FontSize',16)
-text(0-0.03,-7-1.7,0,'\rho = 0.0036','FontSize',16)
-text(0.19-0.03,-7-0.7,0,'\sigma = 0.0733','FontSize',16)
-text(0.19-0.03,-7-1.7,0,'\rho = 0.0663','FontSize',16)
-text(0.38-0.03,-7-0.7,0,'\sigma = 0.1985','FontSize',16)
-text(0.38-0.03,-7-1.7,0,'\rho = 0.118','FontSize',16)
-text(0.57-0.03,-7-0.7,0,'\sigma = 0.4764','FontSize',16)
-text(0.57-0.03,-7-1.7,0,'\rho = 0.2142','FontSize',16)
-text(0.76-0.03,-7-0.7,0,'\sigma = 0.65','FontSize',16)
-text(0.76-0.03,-7-1.7,0,'\rho = 0.2474','FontSize',16)
-text(0.95-0.03,-7-0.7,0,'\sigma = 0.95','FontSize',16)
-text(0.95-0.03,-7-1.7,0,'\rho = 0.2423','FontSize',16)
+text(0-0.03,-12-0.7,0,'\sigma = 0','FontSize',16)
+text(0-0.03,-12-1.7,0,'\rho = 0.0036','FontSize',16)
+text(0.19-0.03,-12-0.7,0,'\sigma = 0.0733','FontSize',16)
+text(0.19-0.03,-12-1.7,0,'\rho = 0.0663','FontSize',16)
+text(0.38-0.03,-12-0.7,0,'\sigma = 0.1985','FontSize',16)
+text(0.38-0.03,-12-1.7,0,'\rho = 0.118','FontSize',16)
+text(0.57-0.03,-12-0.7,0,'\sigma = 0.4764','FontSize',16)
+text(0.57-0.03,-12-1.7,0,'\rho = 0.2142','FontSize',16)
+text(0.76-0.03,-12-0.7,0,'\sigma = 0.65','FontSize',16)
+text(0.76-0.03,-12-1.7,0,'\rho = 0.2474','FontSize',16)
+text(0.95-0.03,-12-0.7,0,'\sigma = 0.95','FontSize',16)
+text(0.95-0.03,-12-1.7,0,'\rho = 0.2423','FontSize',16)
 
 
 
 %% Radius-error
-radios = [1.05 0.6 0.45 0.4 0.3750];
-errores = [max(eww1_4) max(eww2) max(eww3) max(eww4) max(eww5)]*100;
+radios = [1.5 0.9 0.7 0.6 0.45 0.4 0.3750];
+errores = [max(eww1_25) max(eww1_5) max(eww1_75) max(eww2) max(eww3) max(eww4) max(eww5)]*100;
 
 figure
 plot(radios,errores,'x','Color','r')
 hold on;
 plot(radios,errores,'Color','b')
-axis([0 1.5 0 35])
+axis([0 2 0 35])
 xlabel('Radius (m)')
 ylabel('Max slip estimation error (%)')
 set(gca,'FontSize',20);
 % txt1 = 'Speed x1 \rightarrow'; 
 % text(1.8,errores(1),txt1,'FontSize',20)
-txt2 = ' \leftarrow Speed x1.4'; 
-text(radios(1),errores(1),txt2,'FontSize',20)
-txt3 = ' \leftarrow Speed x2'; 
-text(radios(2),errores(2),txt3,'FontSize',20)
-txt4 = ' \leftarrow Speed x3'; 
-text(radios(3),errores(3)+0.2,txt4,'FontSize',20)
-txt5 = ' \leftarrow Speed x4'; 
-text(radios(4),errores(4),txt5,'FontSize',20)
-txt6 = ' \leftarrow Speed x5'; 
-text(radios(5),errores(5),txt6,'FontSize',20)
+txt1 = ' \leftarrow Vel x1.25'; 
+text(radios(1),errores(1),txt1,'FontSize',20)
+txt2 = ' \leftarrow Vel x1.5'; 
+text(radios(2),errores(2),txt2,'FontSize',20)
+txt3 = ' \leftarrow Vel x1.75'; 
+text(radios(3),errores(3),txt3,'FontSize',20)
+txt4 = ' \leftarrow Vel x2'; 
+text(radios(4),errores(4),txt4,'FontSize',20)
+txt5 = ' \leftarrow Vel x3'; 
+text(radios(5),errores(5)+0.2,txt5,'FontSize',20)
+txt6 = ' \leftarrow Vel x4'; 
+text(radios(6),errores(6),txt6,'FontSize',20)
+txt7 = ' \leftarrow Vel x5'; 
+text(radios(7),errores(7),txt7,'FontSize',20)
